@@ -1,0 +1,30 @@
+{
+    "name": "grocy",
+    "plugin_schema": "2",
+    "release": "11.3-RELEASE",
+    "artifact": "https://github.com/dacto/iocage-plugin-grocy.git",
+    "pkgs": [
+        "ftp/curl",
+        "www/nginx-lite",
+        "lang/php73",
+        "converters/php73-iconv",
+        "databases/php73-sqlite3",
+        "databases/php73-pdo_sqlite",
+        "devel/php73-json",
+        "devel/php73-tokenizer",
+        "graphics/php73-gd",
+        "security/php73-filter",
+        "sysutils/php73-fileinfo"
+    ],
+    "packagesite": "http://pkg.FreeBSD.org/FreeBSD:11:amd64/quarterly",
+    "fingerprints": {
+        "plugin-default": [
+            {
+                "function": "sha256",
+                "fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+            }
+        ]
+    },
+    "official": false,
+    "revision": "0"
+}

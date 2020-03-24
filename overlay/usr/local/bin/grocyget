@@ -1,0 +1,7 @@
+#!/bin/sh
+setting="/usr/local/www/grocy/data/settingoverrides/`echo "$1" | rev | cut -d'.' -f 1 | rev`.txt"
+if [ -f "$setting" ]; then
+    cat "$setting"
+else
+    echo "*** unset ***"
+fi

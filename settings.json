@@ -1,0 +1,137 @@
+{
+    "servicerestart":"service nginx restart",
+    "serviceget": "/usr/local/bin/grocyget",
+    "serviceset": "/usr/local/bin/grocyset",
+    "options": {
+        "ENTRY_PAGE": {
+            "type": "combo",
+            "name": "Entry Page",
+            "description": "Specify an custom homepage if desired - by default the homepage will be set to the stock overview",
+            "default": "stock",
+            "options": {
+                "stock": "Stock",
+                "shoppinglist": "Shopping List",
+                "recipes": "Recipes",
+                "chores": "Chores",
+                "tasks": "Tasks",
+                "batteries": "Batteries",
+                "equipment": "Equipment",
+                "calendar": "Calendar",
+                "mealplan": "Meal Plan"
+            }
+        },
+        "DISABLE_AUTH": {
+            "type": "bool",
+            "name": "Disable Authentication",
+            "description": "Set this to true if you want to disable authentication / the login screen",
+            "default": false
+        },
+        "CALENDAR_FIRST_DAY_OF_WEEK": {
+            "type": "int",
+            "name": "First Day Of Week",
+            "description": "Set the first day of the week; Sunday = 0",
+            "range": "0-6",
+            "default": "0"
+        },
+        "FEATURE_FLAG_STOCK": {
+            "type": "bool",
+            "name": "Stock Feature",
+            "description": "Enable/Disable stock view",
+            "optionalargs": {
+                "FEATURE_FLAG_STOCK_PRICE_TRACKING": {
+                    "type": "bool",
+                    "name": "Price Tracking Feature",
+                    "description": "Enable/Disable stock price tracking",
+                    "default": true
+                },
+                "FEATURE_FLAG_STOCK_LOCATION_TRACKING":  {
+                    "type": "bool",
+                    "name": "Location Tracking Feature",
+                    "description": "Enable/Disable stock location tracking",
+                    "default": true
+                },
+                "FEATURE_FLAG_STOCK_BEST_BEFORE_DATE_TRACKING":  {
+                    "type": "bool",
+                    "name": "Best Before Date Tracking Feature",
+                    "description": "Enable/Disable stock best before date tracking",
+                    "default": true
+                },
+                "FEATURE_FLAG_STOCK_PRODUCT_OPENED_TRACKING":  {
+                    "type": "bool",
+                    "name": "Product Opened Tracking Feature",
+                    "description": "Enable/Disable stock product opened tracking",
+                    "default": true
+                },
+                "FEATURE_FLAG_STOCK_PRODUCT_FREEZING":  {
+                    "type": "bool",
+                    "name": "Product Freezing Feature",
+                    "description": "Enable/Disable stock product freezing",
+                    "default": true
+                },
+                "FEATURE_SETTING_STOCK_COUNT_OPENED_PRODUCTS_AGAINST_MINIMUM_STOCK_AMOUNT": {
+                    "type": "bool",
+                    "name": "Stock View Feature",
+                    "description": "Enable/Disable counting opened products in minimum stock amounts",
+                    "default": true
+                }
+            }
+        },
+        "FEATURE_FLAG_SHOPPINGLIST": {
+            "type": "bool",
+            "name": "Shopping List Feature",
+            "description": "Enable/Disable shopping list view",
+            "default": true,
+            "optionalargs": {
+                "FEATURE_FLAG_SHOPPINGLIST_MULTIPLE_LISTS": {
+                    "type": "bool",
+                    "name": "Multiple Lists Feature",
+                    "description": "Enable/Disable multiple shopping lists"
+                }
+            }
+        },
+        "FEATURE_FLAG_RECIPES": {
+            "type": "bool",
+            "name": "Recipe Feature",
+            "description": "Enable/Disable Recipe View",
+            "default": true
+        },
+        "FEATURE_FLAG_CHORES": {
+            "type": "bool",
+            "name": "Chores Feature",
+            "description": "Enable/Disable chores view",
+            "default": true,
+            "optionalargs": {
+                "FEATURE_FLAG_CHORES_ASSIGNMENTS": {
+                    "type": "bool",
+                    "name": "Assignments Feature",
+                    "description": "Enable/Disable chore assignments",
+                    "default": true
+                }
+            }
+        },
+        "FEATURE_FLAG_TASKS": {
+            "type": "bool",
+            "name": "Tasks Feature",
+            "description": "Enable/Disable tasks view",
+            "default": true
+        },
+        "FEATURE_FLAG_BATTERIES": {
+            "type": "bool",
+            "name": "Batteries Feature",
+            "description": "Enable/Disable batteries view",
+            "default": true
+        },
+        "FEATURE_FLAG_EQUIPMENT": {
+            "type": "bool",
+            "name": "Equipment Feature",
+            "description": "Enable/Disable equipment view",
+            "default": true
+        },
+        "FEATURE_FLAG_CALENDAR": {
+            "type": "bool",
+            "name": "Calendar Feature",
+            "description": "Enable/Disable calendar view",
+            "default": true
+        }
+    }
+}
