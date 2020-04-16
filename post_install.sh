@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Download grocy
-GROCY_VERSION="2.6.1"
+GROCY_VERSION="2.6.2"
 WEBROOT="/usr/local/www/grocy"
 GROCY_SRC="${WEBROOT}/grocy_${GROCY_VERSION}.zip"
 
